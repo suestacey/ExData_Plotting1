@@ -1,4 +1,7 @@
 plot1<-function(){
+		
+	library(dplyr, quietly=TRUE, warn.conflicts=FALSE)
+	library(tidyr, warn.conflicts=FALSE)
 	
 	dataFile<-"./data/household_power_consumption.txt"
 

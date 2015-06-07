@@ -1,5 +1,8 @@
 plot3<-function(){
-	
+		
+	library(dplyr, quietly=TRUE, warn.conflicts=FALSE)
+	library(tidyr, warn.conflicts=FALSE)
+		
 	dataFile<-"./data/household_power_consumption.txt"
 
 	data<-read.table(dataFile,fill = TRUE , header = TRUE, sep=';' , stringsAsFactors=FALSE, na.strings="?")
